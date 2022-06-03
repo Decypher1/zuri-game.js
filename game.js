@@ -1,9 +1,10 @@
+// Variable that asks players for their username;
 let name = prompt("Please enter username");
 
 let userName = prompt("Hello " + name + "welcome please select 1 or 2");
 
 
-
+// functions for the guessing game at different stages
 function checkGuess(myGuess) {
     const randomNumber = Math.floor(Math.random() * 2) + 1;
     let guess = prompt("guess a number between one and two");
@@ -58,6 +59,6 @@ function checkGuess3(myGuess3) {
       }
 }
 
-
+// calling the functions
 checkGuess();
 console.log(checkGuess(1));
